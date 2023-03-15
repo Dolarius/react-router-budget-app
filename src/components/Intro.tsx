@@ -15,7 +15,7 @@ const Intro = () => {
           Take Control of <span className="accent">Your Money</span>
         </h1>
         <p>
-          Personal budgeting is teh secret to financial freedom. Start your
+          Personal budgeting is the secret to financial freedom. Start your
           journey today.
         </p>
         <Form method="post">
@@ -27,6 +27,7 @@ const Intro = () => {
             aria-label="Your name"
             autoComplete="given-name"
           />
+          <input type="hidden" name="_action" value="newUser" />
           <button className="btn btn--dark">
             <span>Create Account</span>
             <UserPlusIcon width={20} />
